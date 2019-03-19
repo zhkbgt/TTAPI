@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TTAPI'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'I. sss'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,10 @@ TODO: Add long description of the pod here. sssssssssss
 
   s.ios.deployment_target = '9.0'
 
+# s.xcconfig = {
+#    'VALID_ARCHS' =>  '',
+#  }
+
 #  s.source_files = 'TTAPI/Classes/**/*'
   
   # s.resource_bundles = {
@@ -37,11 +41,14 @@ TODO: Add long description of the pod here. sssssssssss
   # }
 
   s.resources = "TTAPI/Assets/*"
+  s.public_header_files = "Library/*.h"
+   s.source_files        = "Library/*.h"
   s.vendored_frameworks = 'TAPI.framework'
   s.libraries = 'icucore', 'c++', 'bsm', 'z', 'bz2', 'resolv'
   s.frameworks = 'UIKit', 'MapKit', 'WebKit'
+s.vendored_libraries  = ["Library/*.a","Library/*.framework"]
 
-  s.dependency 'TIJK'
+ # s.dependency 'TIJK'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
