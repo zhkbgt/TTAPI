@@ -1,0 +1,25 @@
+[{
+    "name":"audioStreamer",
+    "class":"audioStreamer",
+    "methods":["openPlayer","pause","resume","stop","seekToTime","getCurrentTime","getBufferingRatio","addEventListener","setVolume","getVolume","onCall","onNormal","setLoop","addProgressListener","removeProgressListener"]
+}
+,{
+    "name":"mam",
+    "class":"UZMAM",
+    "methods":["checkUpdate","addEvent","execCommand","showToastAlert","hideToastAlert"],
+    "syncMethods":["syncExecCommand"],
+    "launchClassMethod":"launch"
+}
+,{
+    "name":"playModule",
+    "class":"PlayModule",
+    "methods":["init","play","pause","start","seekTo","getDuration","getCurrentPosition","full","unfull","stop","addEventListener","playUrl","isFullScreen","setVolume","showPlayer","hidePlayer","setSpeed","cleanPlayers","updateUrlDatas","sendDanmu","sendDanmuList","getAudioTrack","setAudioTrack","getMetaInfo"],
+    "syncMethods":["pauseSync","startSync","seekToSync","setSpeedSync","getDurationSync","getCurrentPositionSync","stopSync","setVolumeSync","getAudioTrackSync","setAudioTrackSync"],
+    "launchClassMethod":"launch"
+}
+,{
+    "name":"softInputMgr",
+    "class":"SoftKeyboardMgr",
+    "methods":["toggleKeyboard"]
+}
+]

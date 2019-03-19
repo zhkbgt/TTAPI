@@ -1,0 +1,6 @@
+framework module TAPI {
+  umbrella header "TAPI.h"
+
+  export *
+  module * { export * }
+}
